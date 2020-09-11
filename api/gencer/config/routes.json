@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gencer",
+      "handler": "gencer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gencer",
+      "handler": "gencer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gencer",
+      "handler": "gencer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

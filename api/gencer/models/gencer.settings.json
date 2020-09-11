@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "gencers",
+  "info": {
+    "name": "gencer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "cenver": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
